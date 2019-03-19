@@ -24,6 +24,6 @@ def main():
                 # stabilities.append([stability,id_to_find]) # create array of all stabilities
                 stabilities.append([id_to_find, stability]) #creates array of all stabilites, but with swapped columns   
         reshaped = np.reshape(stabilities,(-1, 2))
-        reshaped = reshaped[reshaped[:,0].argsort(kind='mergesort')] # sort by eel ID
+        #reshaped = reshaped[reshaped[:,0].argsort(kind='mergesort')] # sort by eel ID
         generate_heatmap(reshaped)
 main()
